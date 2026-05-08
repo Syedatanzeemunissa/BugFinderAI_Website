@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #111827, #1e3a8a);
+    color: white;
+}
+
+.page {
+    display: none;
+    min-height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-box,
+.result-box {
+    width: 90%;
+    max-width: 750px;
+    background: white;
+    color: #111827;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+.hero-box h1,
+.result-box h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #d1d5db;
+    margin-bottom: 25px;
+}
+
+.hero-box .subtitle {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 80%;
+    padding: 14px;
+    font-size: 16px;
+    border: 2px solid #d1d5db;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.main-btn {
+    padding: 14px 28px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    background: #1d4ed8;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    color: #111827;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card {
+    background: white;
+    color: #111827;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.instruction {
+    font-weight: bold;
+}
+
+pre {
+    background: #111827;
+    color: #22c55e;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #e5e7eb;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.option-btn:hover {
+    background: #bfdbfe;
+}
+
+.correct {
+    background: #22c55e !important;
+    color: white;
+}
+
+.wrong {
+    background: #ef4444 !important;
+    color: white;
+}
+
+#nextBtn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#nextBtn:hover {
+    background: #1d4ed8;
+}
+
+#result {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#explanation {
+    color: #374151;
+    font-weight: 500;
+}
+
+.result-player {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#finalScore {
+    font-size: 50px;
+    color: #2563eb;
+}
+
+#finalMessage {
+    font-size: 20px;
+    color: #374151;
+    font-weight: bold;
+}

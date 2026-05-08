@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BugFinder AI: CodeQuest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PAGE 1: TITLE PAGE -->
+    <section id="titlePage" class="page active">
+        <div class="hero-box">
+            <h1>BugFinder AI: CodeQuest</h1>
+            <p class="subtitle">An Intelligent Debugging Game</p>
+
+            <p class="description">
+                Test your Java debugging skills by finding bugs in code snippets.
+                Each round gives you random questions, instant feedback, AI-style explanations,
+                and a final performance score.
+            </p>
+
+            <input type="text" id="playerName" placeholder="Enter your name">
+
+            <button onclick="startGame()" class="main-btn">Start Game</button>
+        </div>
+    </section>
+
+
+    <!-- PAGE 2: GAME PAGE -->
+    <section id="gamePage" class="page">
+        <div class="container">
+            <h1>BugFinder AI: CodeQuest</h1>
+            <p class="subtitle">Debug the code and choose the correct bug</p>
+
+            <div class="top-bar">
+                <p>Player: <span id="displayName">Player</span></p>
+                <p>Score: <span id="score">0</span></p>
+            </div>
+
+            <div class="card">
+                <h2 id="levelTitle">Level 1</h2>
+                <p class="instruction">Find the bug in the code below:</p>
+
+                <pre id="codeBox"></pre>
+
+                <div id="options"></div>
+
+                <button onclick="nextQuestion()" id="nextBtn">Next Question</button>
+
+                <p id="result"></p>
+                <p id="explanation"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PAGE 3: RESULT PAGE -->
+    <section id="resultPage" class="page">
+        <div class="result-box">
+            <h1>Game Over</h1>
+
+            <p class="result-player">Player: <span id="finalPlayerName"></span></p>
+
+            <h2>Your Final Score</h2>
+            <h1 id="finalScore">0/100</h1>
+
+            <p id="finalMessage"></p>
+
+            <button onclick="restartGame()" class="main-btn">Play Again</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
